@@ -8,6 +8,7 @@ public class Country {
     private int id;
     private String country_name;
     private String country_code;
+    private int cityId;
 
     public int getId() {
         return id;
@@ -31,5 +32,13 @@ public class Country {
 
     public void setCountry_code(String country_code) {
         this.country_code = country_code;
+    }
+
+    public int getCityId() {
+        return cityId;
+    }
+
+    public void setCityId(int cityId) {
+        this.cityId = cityId;
     }
 }

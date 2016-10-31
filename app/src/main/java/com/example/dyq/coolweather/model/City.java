@@ -8,6 +8,7 @@ public class City {
     private int id;
     private String city_name;
     private String city_code;
+    private int provinceId;
 
     public String getCity_code() {
         return city_code;
@@ -31,5 +32,13 @@ public class City {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getProvinceId() {
+        return provinceId;
+    }
+
+    public void setProvinceId(int provinceId) {
+        this.provinceId = provinceId;
     }
 }
