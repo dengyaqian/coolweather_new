@@ -12,6 +12,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.dyq.coolweather.R;
 import com.example.dyq.coolweather.db.CoolWeatherDB;
 import com.example.dyq.coolweather.model.City;
 import com.example.dyq.coolweather.model.Country;
@@ -62,8 +63,8 @@ public class ChooseAreaActivity extends Activity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.choose_area);
-        listView = findViewById(R.id.list_view);
-        titleText = findViewById(R.id.title_text);
+        listView = (ListView) findViewById(R.id.list_view);
+        titleText = (TextView) findViewById(R.id.title_text);
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,dataList);
         listView.setAdapter(adapter);
         coolWeatherDB = coolWeatherDB.getInstance(this);
